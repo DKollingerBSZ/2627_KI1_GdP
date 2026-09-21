@@ -19,7 +19,6 @@ Starten:  In VS Code auf den Play-Pfeil rechts oben,
 # ---------------------------------------------------------------
 # print() schreibt etwas auf den Bildschirm.
 
-
 # Alles hinter einem # ist ein Kommentar.
 # Der Interpreter ignoriert ihn - er ist nur fuer Menschen da.
 
@@ -28,7 +27,6 @@ Starten:  In VS Code auf den Play-Pfeil rechts oben,
 # 2. Variablen
 # ---------------------------------------------------------------
 # Eine Variable ist ein benannter Platz fuer einen Wert.
-
 
 # f-String: Text und Werte mischen. Das f vor dem Anfuehrungszeichen
 # ist wichtig - ohne f steht spaeter woertlich {kursname} auf dem Bildschirm.
