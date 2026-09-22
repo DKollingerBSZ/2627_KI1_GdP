@@ -33,11 +33,8 @@ Starten:  python 10_Demo_Datentypen.py
 # 3. Und gleich dahinter: der naechste Platz
 # ---------------------------------------------------------------
 # Erst starten, dann gemeinsam lesen, was Python meldet.
-# (Im Unterricht ohne # tippen - hier auskommentiert, damit die
-# fertige Datei durchlaeuft.)
-
-# naechster = platz + 1
-# print("Gleich dahinter: Platz", naechster)
+# (Die Zeilen dieses Schritts stehen in der fertigen Fassung unter 5 -
+# nach dem Umwandeln laufen sie.)
 
 
 # ---------------------------------------------------------------
