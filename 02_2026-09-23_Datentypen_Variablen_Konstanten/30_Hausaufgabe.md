@@ -1,4 +1,4 @@
-# Hausaufgabe zum 23.09.2026 — Deine Startkarte
+# Hausaufgabe zum 23.09.2026 — Der Sensorwert
 
 **Abgabe:** bis Dienstag, 29.09., in OneNote · **Dauer:** etwa 30 Minuten
 
@@ -6,55 +6,64 @@
 
 ## Worum es geht
 
-Beim Stadtlauf füllt jeder Teilnehmer bei der Anmeldung eine Startkarte aus. Aus dieser Karte
-entsteht später die Zeile in der Meldeliste — und aus der Zeile am Ende die Urkunde.
+Diese Aufgabe hat mit dem Stadtlauf nichts zu tun — sie zeigt, dass dieselben vier Typen
+überall auftauchen, wo Technik Werte verarbeitet.
 
-Heute schreibst du deine eigene Startkarte als Programm. Sie ist der erste Datensatz, mit dem
-wir im weiteren Halbjahr arbeiten.
+An einer Maschine hängt ein Temperatursensor. Er liefert keine Grad, sondern eine Spannung.
+Ein Analog-Digital-Wandler macht daraus eine ganze Zahl zwischen 0 und 1023 — den **Rohwert**.
+Erst das Programm rechnet daraus wieder Volt und Grad.
+
+```
+Rohwert  →  Spannung  →  Temperatur
+  148        0.72 V       72.3 °C
+```
 
 ## Aufgabe
 
-Lege eine Datei `startkarte.py` an. Trage dich selbst als Teilnehmer ein — mit einer
-Startnummer deiner Wahl zwischen 100 und 1 999.
+Lege `sensorwert.py` an.
 
-Das Programm enthält:
+1. **Drei Konstanten**, ganz oben, in GROSSBUCHSTABEN:
 
-1. **Eine Konstante** `LAUFJAHR = 2027`, ganz oben.
-2. **Sechs Variablen** mit sprechenden Namen: Startnummer, Vorname, Nachname, Geburtsjahr,
-   Geschlecht (`"W"` oder `"M"`), Strecke (`"5km"`, `"10km"` oder `"HM"`).
-3. **Hinter jeder Variablen einen Kommentar**, der den Typ nennt und begründet, warum es
-   dieser Typ ist. Nicht „ist ein int", sondern warum: *womit muss gerechnet werden, womit nicht?*
-4. **Eine Berechnung**: dein Alter am Wettkampftag, aus `LAUFJAHR` und deinem Geburtsjahr.
-5. **Eine Ausgabe** in dieser Form:
+   ```python
+   ROHWERT_MAX = 1023      # größter Wert des Wandlers
+   U_REF = 5.0             # Referenzspannung in Volt
+   MV_JE_GRAD = 10.0       # der Sensor liefert 10 mV je Grad
+   ```
+
+2. **Zwei Variablen:** die Messstelle (`"S-014"`) und der Rohwert. Den Rohwert fragst du mit
+   `input()` ab — so, wie es die Demo aus der Stunde macht.
+3. **Zwei Berechnungen:** die Spannung aus Rohwert, `U_REF` und `ROHWERT_MAX`; daraus die
+   Temperatur über `MV_JE_GRAD`. (1 V sind 1000 mV.)
+4. **Eine Ausgabe** in dieser Form:
 
 ```
-Startkarte Neumarkter Stadtlauf 2027
-------------------------------------
-Startnummer : 512
-Name        : Julia Berger
-Jahrgang    : 2003 (24 Jahre am Wettkampftag)
-Geschlecht  : W
-Strecke     : 10km
+Messstelle : S-014
+Rohwert    : 148
+Spannung   : 0.7233626588465298 V
+Temperatur : 72.33626588465299 Grad C
 ```
 
-## Teil 2 — eine Frage zum Nachdenken
+Ja, die Nachkommastellen sind unschön. Rundung kommt am 30.09. — heute bleibt es so stehen.
 
-Schreibe als Kommentar ans Ende deiner Datei, **in zwei bis drei Sätzen**:
+5. **Hinter jede Variable und jede Konstante einen Kommentar** mit dem Typ und einer kurzen
+   Begründung. Nicht „ist ein float", sondern *warum*: Was soll mit dem Wert passieren?
 
-> Die Startnummer ist eine Zahl. Mit ihr wird aber nie gerechnet — niemand addiert zwei
-> Startnummern. Wäre `str` dann nicht der bessere Typ? Was spricht dafür, was dagegen?
+## Teil 2 — zwei Fragen zum Nachdenken
 
-Es gibt hier keine eindeutig richtige Antwort. Gefragt ist die Begründung, nicht das Ergebnis.
-Wir besprechen das am 30.09.
+Als Kommentar ans Ende der Datei, je ein bis zwei Sätze:
+
+1. Der Rohwert ist `int`, die Spannung `float`. Warum geht das gar nicht anders?
+2. Die Messstelle heißt `"S-014"`. Warum ist das Text — und was passiert, wenn jemand sie als
+   Zahl speichern will?
 
 ## Hinweise
 
-- Anführungszeichen nur um Text. `geburtsjahr = "2003"` ist falsch — damit kannst du nicht
-  rechnen.
+- `input()` liefert immer Text. Ohne `int(...)` bekommst du bei der ersten Rechnung genau die
+  Fehlermeldung, die in der Stunde am Beamer stand.
 - Kommazahlen mit Punkt, nicht mit Komma.
 - Wenn eine Fehlermeldung kommt: lies die **letzte** Zeile, dort steht, was Python stört.
 
 ## Bonus (freiwillig)
 
-Gib zusätzlich zu jedem Feld den Typ aus, indem du `type()` benutzt. Lass dir die Ausgabe so
-formatieren, dass die Typen untereinander stehen.
+Gib zu jedem Wert zusätzlich den Typ mit `type()` aus. Und: Probier einmal `U_REF = 5` statt
+`5.0`. Ändert sich das Ergebnis? Ändert sich der Typ?
