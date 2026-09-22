@@ -106,6 +106,31 @@ beschwert. Der vierte Fehler ist der unangenehmste — er erzeugt keine Fehlerme
 
 ---
 
+## Checkliste — für alle
+
+Hier hört Teil A auf. Bevor du weitermachst oder schließt:
+
+- [ ] In A1 hast du alle drei Änderungen ausprobiert
+- [ ] A1 bis A4 laufen ohne Fehlermeldung
+- [ ] **Ziel erreicht:** `a2_urkunde.py` druckt den Kopf deiner Urkunde mit ausgerechnetem Alter
+- [ ] In A3 steht die Konstante ganz oben und in Großbuchstaben
+- [ ] In A4 steht zu jedem der vier Fehler ein Kommentar
+- [ ] Alle Dateien liegen in `GdP/02_Datentypen`
+
+### Was nimmst du mit?
+
+Schreib dir **zwei Sätze** auf — für dich, nicht für die Lehrkraft:
+
+1. Was hast du heute verstanden, das du vorher nicht wusstest?
+2. Wo bist du hängen geblieben — und wie bist du weitergekommen?
+
+Am Ende der Stunde sammeln wir daraus, was an die Wand kommt. **Ihr entscheidet**, welcher
+Satz und welches Beispiel es verdient, dort zu hängen.
+
+Fertig und noch Zeit? Dann geht es mit **B** und **C** weiter.
+
+---
+
 ## B — Vertiefung
 
 ### B1 Welcher Typ steckt drin?
@@ -255,27 +280,3 @@ platz_wagner = platz_huber
 
 Was kommt heraus, und warum? Mit einer dritten Variablen geht es. Schreib in einem Satz dazu,
 wofür du sie brauchst.
-
----
-
-## Checkliste
-
-Bevor du schließt:
-
-- [ ] A1 bis A4 laufen ohne Fehlermeldung
-- [ ] Wenn du bei B3 warst: Dein Programm fragt die Daten ab und rechnet das Alter
-- [ ] In A1 hast du alle drei Änderungen ausprobiert
-- [ ] **Ziel erreicht:** `a2_urkunde.py` druckt den Kopf deiner Urkunde mit ausgerechnetem Alter
-- [ ] In A3 steht die Konstante ganz oben und in Großbuchstaben
-- [ ] In A4 steht zu jedem der vier Fehler ein Kommentar
-- [ ] Alle Dateien liegen in `GdP/02_Datentypen`
-
-### Was nimmst du mit?
-
-Bevor du schließt, schreib dir **zwei Sätze** auf — für dich, nicht für die Lehrkraft:
-
-1. Was hast du heute verstanden, das du vorher nicht wusstest?
-2. Wo bist du hängen geblieben — und wie bist du weitergekommen?
-
-Am Ende der Stunde sammeln wir daraus, was an die Wand kommt. **Ihr entscheidet**, welcher
-Satz und welches Beispiel es verdient, dort zu hängen.
