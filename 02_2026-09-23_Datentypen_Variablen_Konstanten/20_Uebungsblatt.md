@@ -145,21 +145,32 @@ Lege `b2_umwandeln.py` an und mache daraus rechenbare Werte. Gib anschließend a
 
 Gib zu jedem Wert den Typ mit aus, vorher und nachher.
 
-### B3 Die Zeitmessung misst Hundertstel
+### B3 Anmeldung am Laptop
 
-Ein Läufer bekommt zwei Zwischenzeiten gestoppt: `0.1` und `0.2` Sekunden Abzug.
+Am Anmeldetisch steht ein Laptop. Wer mitlaufen will, tippt seine Daten selbst ein — und das
+Programm druckt sofort den Kopf der Urkunde. Dasselbe Programm für jede und jeden.
 
-```python
-abzug = 0.1 + 0.2
-print(abzug)
-print(abzug == 0.3)
+Lege `b3_anmeldung.py` an. Das Programm fragt mit `input()` nacheinander:
+
+```
+Startnummer? 512
+Vorname?     Julia
+Nachname?    Berger
+Jahrgang?    2003
+Strecke?     10km
 ```
 
-Lege `b3_hundertstel.py` an, führe es aus und schreibe als Kommentar auf:
+und druckt danach den Kopf der Urkunde **mit ausgerechnetem Alter**, wie in A3.
 
-1. Was wird ausgegeben — und was hättest du erwartet?
-2. Warum ist das so? (ein Satz)
-3. Was bedeutet das für die Frage „sind zwei Läufer gleich schnell gewesen?"
+Hinweise:
+
+- `input("Vorname? ")` wartet, bis jemand etwas eintippt und Enter drückt. Was eingetippt
+  wurde, ist danach der Wert — speichere ihn in einer Variablen.
+- Bau das Alter erst ein, wenn der Rest läuft. Die Fehlermeldung, die dann vermutlich kommt,
+  kennst du aus A1. Schreib als Kommentar dazu, **welchen Typ** `input()` liefert und wie du
+  das Problem gelöst hast.
+- Lass das Programm zweimal laufen, einmal mit deinen Daten, einmal mit denen deines Nachbarn.
+  Was hast du dafür am Programm geändert?
 
 ---
 
@@ -173,14 +184,16 @@ Erst danach tippen und prüfen.
 ```python
 print("847" + "1")
 print(847 + 1)
-print(4388 / 60)
-print(4388 // 60)
+print("847" * 2)
+print(847 * 2)
 print(int("1970") + 1)
 print(str(847) + " Schneider")
-print(2027 - 1970 > 40)
+print(10 / 4)
+print(float("73"))
 ```
 
-Wo du falsch lagst, schreib in einem Satz dazu, warum.
+Wo du falsch lagst, schreib in einem Satz dazu, warum. Zwei Zeilen sehen harmlos aus und
+überraschen fast alle.
 
 ### C2 Namen aufräumen
 
@@ -198,6 +211,51 @@ Schreib das Ganze als `c2_namen.py` neu, mit Namen, die sagen, was drinsteht. Ä
 der Rechnung. Vergleiche die beiden Fassungen und schreib in einem Satz auf, welche du in vier
 Wochen noch verstehen würdest.
 
+### C3 Schreibtischtest: Was steht in den Variablen?
+
+Nur auf Papier, **ohne Rechner.** Lege eine Tabelle an mit einer Spalte je Variable und einer
+Zeile je Programmzeile. Trage nach jeder Zeile ein, was **jetzt** in den Variablen steht.
+
+```python
+runde = 1
+zeit = 300
+runde = runde + 1
+zeit = zeit + runde
+runde = 10
+text = "Runde " + str(runde)
+```
+
+| Zeile | `runde` | `zeit` | `text` |
+|---|---|---|---|
+| 1 | 1 | — | — |
+| 2 | | | |
+| … | | | |
+
+Danach die Frage, als Satz: Ändert sich `zeit`, wenn in Zeile 5 `runde` auf `10` gesetzt wird?
+Warum nicht? Erst jetzt tippen und mit `print` prüfen.
+
+### C4 Zwei Plätze vertauscht
+
+Im letzten Jahr waren auf den Urkunden zwei Plätze vertauscht. Das passiert jetzt im Programm:
+
+```python
+platz_huber = 4
+platz_wagner = 3      # falsch herum - Huber war Dritter, Wagner Vierter
+```
+
+Lege `c4_tauschen.py` an und tausche die beiden Werte **über die Variablen**, ohne die Zahlen
+3 und 4 noch einmal hinzuschreiben. Gib danach beide Plätze aus.
+
+Probier zuerst das Naheliegende:
+
+```python
+platz_huber = platz_wagner
+platz_wagner = platz_huber
+```
+
+Was kommt heraus, und warum? Mit einer dritten Variablen geht es. Schreib in einem Satz dazu,
+wofür du sie brauchst.
+
 ---
 
 ## Checkliste
@@ -205,6 +263,7 @@ Wochen noch verstehen würdest.
 Bevor du schließt:
 
 - [ ] A1 bis A4 laufen ohne Fehlermeldung
+- [ ] Wenn du bei B3 warst: Dein Programm fragt die Daten ab und rechnet das Alter
 - [ ] In A1 hast du alle drei Änderungen ausprobiert
 - [ ] **Ziel erreicht:** `a2_urkunde.py` druckt den Kopf deiner Urkunde mit ausgerechnetem Alter
 - [ ] In A3 steht die Konstante ganz oben und in Großbuchstaben
