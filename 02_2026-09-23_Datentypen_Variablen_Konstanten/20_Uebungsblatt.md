@@ -270,5 +270,12 @@ Bevor du schließt:
 - [ ] In A4 steht zu jedem der vier Fehler ein Kommentar
 - [ ] Alle Dateien liegen in `GdP/02_Datentypen`
 
-**Was heute an die Wand kommt:** die Werkzeugkarte `int float str bool` und die Auftragskarte 02.
-Das Abnahmekriterium trägt ein, wer am Beamer war.
+### Was nimmst du mit?
+
+Bevor du schließt, schreib dir **zwei Sätze** auf — für dich, nicht für die Lehrkraft:
+
+1. Was hast du heute verstanden, das du vorher nicht wusstest?
+2. Wo bist du hängen geblieben — und wie bist du weitergekommen?
+
+Am Ende der Stunde sammeln wir daraus, was an die Wand kommt. **Ihr entscheidet**, welcher
+Satz und welches Beispiel es verdient, dort zu hängen.
