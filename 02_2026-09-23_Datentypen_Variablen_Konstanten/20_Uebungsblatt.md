@@ -26,8 +26,8 @@ jede Aufgabe als eigene Datei `⟨nr⟩_⟨aufgabe⟩.py`.
 
 ### A1 Sofia Schneider im Programm
 
-Das ist das Programm von der Folie. Lege `a1_sofia.py` an und **tippe es ab** — nicht kopieren,
-beim Abtippen lernen die Finger mit.
+Lege `a1_sofia.py` an und **tippe dieses Programm ab** — nicht kopieren, beim Abtippen lernen
+die Finger mit.
 
 ```python
 startnummer = 847
@@ -39,7 +39,7 @@ print(name, "ist", alter, "Jahre alt.")
 print(startnummer + 1)
 ```
 
-Führe es aus. Kommt heraus, was die Klasse vorhergesagt hat?
+Überleg vor dem Start: Was wird ausgegeben? Dann ausführen.
 
 Jetzt **eine Änderung nach der anderen** — jeweils erst überlegen, was passieren wird, dann
 ausführen:
@@ -192,7 +192,7 @@ Hinweise:
 - `input("Vorname? ")` wartet, bis jemand etwas eintippt und Enter drückt. Was eingetippt
   wurde, ist danach der Wert — speichere ihn in einer Variablen.
 - Bau das Alter erst ein, wenn der Rest läuft. Die Fehlermeldung, die dann vermutlich kommt,
-  kennst du aus A1. Schreib als Kommentar dazu, **welchen Typ** `input()` liefert und wie du
+  kennst du aus der Demo und aus A1. Schreib als Kommentar dazu, **welchen Typ** `input()` liefert und wie du
   das Problem gelöst hast.
 - Lass das Programm zweimal laufen, einmal mit deinen Daten, einmal mit denen deines Nachbarn.
   Was hast du dafür am Programm geändert?
