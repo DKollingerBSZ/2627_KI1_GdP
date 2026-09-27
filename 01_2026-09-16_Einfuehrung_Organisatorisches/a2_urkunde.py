@@ -11,5 +11,5 @@ print ("URKUNDE - Neumarkter Stadtlauf")
 
 print ("Startnummer:", Strn)
 print("Name:", Nam)
-print("Jahrgang:", x, Gan, "Jahre")
+print("Jahrgang:", x,"(",Gan, ")", "Jahre")
 print("Strecke:", Str,"km")
