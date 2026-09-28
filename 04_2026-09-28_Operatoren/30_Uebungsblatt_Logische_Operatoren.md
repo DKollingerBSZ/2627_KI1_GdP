@@ -41,27 +41,19 @@ Speichere die Ergebnisse jeweils in einer Variablen namens `ergebnis` und gib si
     hat_ausweis = True
     ```
 
-8. Prüfe, ob eine Person einen Rabatt bekommt, wenn sie unter 18 **oder** über 65 Jahre alt ist.
-
 ## 3. Aufgaben mit `input()`
 
 Lies die benötigten Werte mit `input()` ein. Wandle Zahlen mit `int()` um und wandle die Eingaben `ja` und `nein` in passende Wahrheitswerte um.
 
-9. **Einlass:** Frage nach dem Alter und danach, ob eine Eintrittskarte vorhanden ist. Der Einlass ist erlaubt, wenn die Person mindestens 16 Jahre alt **und** eine Eintrittskarte vorhanden ist.
+8. **Einlass:** Frage nach dem Alter und danach, ob eine Eintrittskarte vorhanden ist. Der Einlass ist erlaubt, wenn die Person mindestens 16 Jahre alt **und** eine Eintrittskarte vorhanden ist.
 
-10. **Freier Eintritt:** Frage nach dem Alter. Freien Eintritt erhalten Kinder unter 6 Jahren **oder** Personen ab 65 Jahren.
-
-11. **Passwort prüfen:** Lies einen Benutzernamen und ein Passwort ein. Gib nur dann `True` aus, wenn der Benutzername `admin` **und** das Passwort `python123` lautet.
-
-12. **Notfallkontakt:** Frage, ob jemand telefonisch **oder** per E-Mail erreichbar ist. Gib aus, ob mindestens eine Kontaktmöglichkeit vorhanden ist.
+9. **Passwort prüfen:** Lies einen Benutzernamen und ein Passwort ein. Gib nur dann `True` aus, wenn der Benutzername `admin` **und** das Passwort `python123` lautet.
 
 ## 4. Kombinierte Bedingungen
 
-13. Lies eine Punktzahl ein. Eine Prüfung ist bestanden, wenn die Punktzahl mindestens 50 beträgt und höchstens 100 beträgt.
+10. Lies eine Temperatur ein. Gib aus, ob eine Warnung nötig ist, wenn die Temperatur unter 0 Grad **oder** über 35 Grad liegt.
 
-14. Lies eine Temperatur ein. Gib aus, ob eine Warnung nötig ist, wenn die Temperatur unter 0 Grad **oder** über 35 Grad liegt.
-
-15. Überlege zuerst, welche Bedingung zuerst ausgewertet wird. Bestimme anschließend die Ausgabe:
+11. Überlege zuerst, welche Bedingung zuerst ausgewertet wird. Bestimme anschließend die Ausgabe:
     ```python
     a = True
     b = False
@@ -71,7 +63,7 @@ Lies die benötigten Werte mit `input()` ein. Wandle Zahlen mit `int()` um und w
     print(a or b and c)
     ```
 
-16. Setze in der vorherigen Aufgabe passende Klammern. Prüfe, ob diese Ausdrücke dasselbe Ergebnis liefern:
+12. Setze in der vorherigen Aufgabe passende Klammern. Prüfe, ob diese Ausdrücke dasselbe Ergebnis liefern:
     ```python
     (a and b) or c
     a or (b and c)
@@ -79,4 +71,4 @@ Lies die benötigten Werte mit `input()` ein. Wandle Zahlen mit `int()` um und w
 
 ##  Optional: Zusatzaufgabe
 
-17. Schreibe ein kleines Programm für eine Tür. Die Tür öffnet sich, wenn eine gültige Karte **und** der richtige PIN eingegeben wurden. Zusätzlich soll sich die Tür im Notfall öffnen, wenn der Notfallknopf gedrückt wurde. Verwende dafür `and`, `or` und verständliche Ausgaben.
+13. Schreibe ein kleines Programm für eine Tür. Die Tür öffnet sich, wenn eine gültige Karte **und** der richtige PIN eingegeben wurden. Zusätzlich soll sich die Tür im Notfall öffnen, wenn der Notfallknopf gedrückt wurde. Verwende dafür `and`, `or` und verständliche Ausgaben.
