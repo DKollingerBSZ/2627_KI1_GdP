@@ -8,17 +8,17 @@ Vergleichsoperatoren vergleichen zwei Werte. Das Ergebnis ist immer `True` oder 
 
 Lies die benötigten Werte mit `input()` ein. Wandle Eingaben, die Zahlen darstellen, mit `int()` in ganze Zahlen um. Gib anschließend eine verständliche Aussage und das Ergebnis des Vergleichs aus.
 
-16. **Zwei Seiten**
+1. **Zwei Seiten**
    Lies die Längen zweier Dreiecksseiten ein. Gib aus, ob die erste Seite länger ist als die zweite.
 
-17. **Zwei Temperaturen**
+2. **Zwei Temperaturen**
    Lies zwei Temperaturen in Grad Celsius ein. Gib aus, ob die Temperaturen gleich sind.
 
-18. **Mindestalter**
+3. **Mindestalter**
    Lies das Alter einer Person ein. Prüfe, ob die Person mindestens 16 Jahre alt ist, und gib das Ergebnis verständlich aus.
 
-19. **Punktestand prüfen**
+4. **Punktestand prüfen**
    Lies die erreichten Punkte und die zum Bestehen benötigte Mindestpunktzahl von 20 ein. Gib aus, ob die erreichte Punktzahl kleiner als die Mindestpunktzahl ist.
 
-20. **Gewichtsgrenze**
+5. **Gewichtsgrenze**
    Lies das Gewicht eines Pakets und das maximal erlaubte Gewicht ein. Gib aus, ob das Paket höchstens so schwer wie erlaubt ist. Verwende dafür den passenden Vergleichsoperator für „kleiner oder gleich“.
