@@ -4,7 +4,7 @@ name1 = "Otto"
 name2 = "Otto"
 print("sind die Namen gleich?")
 ergebnis = (name1 == name2)
-print(ergebnis)
+c
 
 print("sind die Namen ungleich?")
 print(name1 != name2)

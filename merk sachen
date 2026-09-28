@@ -1,0 +1,39 @@
+print(1 > 5) #(>)größer als, (<)kleiner als
+
+print(5 >= 5) #(<=)kleiner als oder gleich, (>=)größer als oder gleich
+
+print(4 == 5) #Gleiche Operation, Ungleiche Operation
+
+
+if      # erste Prüfung
+elif    # weitere Prüfungen
+elif    # weitere Prüfung
+else    # wenn nichts davon stimmt
+alter  = int(input("wie alt bist du ? "))
+
+if alter <= 18:
+    print("kostet das kinoticket 10 euro" ) 
+#if
+elif alter >= 65:
+    print("kostet das kinoticket 15 euro ")
+#elif
+else:
+    print("kostet das kinoticket 20 euro ")
+#else
+
+
+
+
+
+
+
+import math
+
+a = float(input("Seitenlänge a: "))
+b = float(input("Seitenlänge b: "))
+
+flaeche =  a * b
+c = math.sqrt(a**2 + b**2)
+
+print("Die Fläche ist:", flaeche)
+print("Die Hypotenuse ist:", c)
