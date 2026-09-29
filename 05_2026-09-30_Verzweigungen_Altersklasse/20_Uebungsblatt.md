@@ -46,6 +46,8 @@ eigene Datei.
 
 ### A1 Die ganze Tabelle
 
+**Auftrag:** Bau die Kette aus der Demo auf alle sechs Altersklassen aus und teste sie an den Grenzen. Datei: `a1_altersklasse.py`
+
 Das ist der Stand aus der Demo. Lege `a1_altersklasse.py` an und tippe ihn ab:
 
 ```python
@@ -83,6 +85,8 @@ die Antwort als Kommentar in einem Satz, dann stell die Reihenfolge wieder her.
 
 ### A2 Die Altersklasse auf deiner Urkunde
 
+**Auftrag:** Dein Urkundenkopf von letzter Woche bekommt deine Altersklasse. Datei: `a2_urkunde.py`
+
 Öffne `a2_urkunde.py` von letzter Woche (oder kopiere sie nach `GdP/03_Verzweigungen`). Ergänze:
 
 1. eine Variable `geschlecht` (`"W"` oder `"M"`),
@@ -103,6 +107,8 @@ Die Kette muss nur die **Zahl** bestimmen, der Buchstabe steht schon in `geschle
 </details>
 
 ### A3 Die Nettozeit
+
+**Auftrag:** Rechne Sofias Nettozeit aus und gib sie als `mm:ss` aus. Datei: `a3_nettozeit.py`
 
 Die **Nettozeit** ist die Zeit von der Startlinie bis zur Ziellinie — nicht ab dem Startschuss. Wer
 hinten im Pulk steht, verliert so keine Sekunde. Dafür misst ein Chip in der Startnummer, wann
@@ -141,6 +147,8 @@ Beispiel mit 150 Sekunden — rechne es im Kopf nach, dann mit Sofias Zahlen im 
 die du dir für dich ausdenkst.
 
 ### A4 Die Kette, die nicht stimmt
+
+**Auftrag:** In einer Kette stecken vier Fehler — finde und repariere sie. Datei: `a4_reparatur.py`
 
 > **Erst A1 bis A3 fertig machen, dann aufklappen.**
 
