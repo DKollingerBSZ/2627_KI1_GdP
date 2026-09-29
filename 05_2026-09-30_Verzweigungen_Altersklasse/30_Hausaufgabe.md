@@ -49,12 +49,10 @@ Ergänze das Programm:
    der Rohwert außerhalb, gibt das Programm `SENSORFEHLER` aus und rechnet **keine** Temperatur.
 3. Die Ausgabe, zum Beispiel für den Rohwert 148:
 
-```
-Messstelle : S-014
-Rohwert    : 148
-Temperatur : 72.33626588465299 Grad C
-Meldung    : WARNUNG — Last reduzieren
-```
+> `Messstelle : S-014`\
+> `Rohwert    : 148`\
+> `Temperatur : 72.33626588465299 Grad C`\
+> `Meldung    : WARNUNG — Last reduzieren`
 
 ## Teil 2 — die Grenzen
 

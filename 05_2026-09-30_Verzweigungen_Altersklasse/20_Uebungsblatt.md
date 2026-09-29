@@ -6,15 +6,13 @@
 > **Ziel der Stunde:** Dein Programm rechnet Altersklasse und Nettozeit selbst aus. Der Kopf deiner
 > Urkunde von letzter Woche wird zwei Zeilen länger:
 >
-> ```
-> URKUNDE – Neumarkter Stadtlauf
-> Startnummer : 847
-> Name        : Sofia Schneider
-> Jahrgang    : 1970 (57 Jahre)
-> Strecke     : 10km
-> Nettozeit   : mm:ss
-> Altersklasse: Wxx
-> ```
+> > `URKUNDE – Neumarkter Stadtlauf`\
+> > `Startnummer : 847`\
+> > `Name        : Sofia Schneider`\
+> > `Jahrgang    : 1970 (57 Jahre)`\
+> > `Strecke     : 10km`\
+> > `Nettozeit   : mm:ss`\
+> > `Altersklasse: Wxx`
 >
 > Die Werte stehen hier absichtlich nicht. Ob sie stimmen, zeigen Gegenprobe und Tabelle — und am
 > Ende der Stunde der Vergleich mit Sofias Urkunde.
@@ -119,9 +117,7 @@ ziel  = 40412        # 11:13:32 Uhr
 
 Lege `a3_nettozeit.py` an und gib die Nettozeit im Format der Urkunde aus:
 
-```
-Nettozeit   : mm:ss
-```
+> `Nettozeit   : mm:ss`
 
 Du brauchst dafür die Operatoren von Montag: erst die Differenz, dann ganze Minuten und den Rest.
 **Prüfe dich selbst mit der Gegenprobe:** Minuten mal 60 plus Sekunden muss wieder die Differenz
