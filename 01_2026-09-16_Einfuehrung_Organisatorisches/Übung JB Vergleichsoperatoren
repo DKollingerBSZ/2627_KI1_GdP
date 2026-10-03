@@ -1,0 +1,97 @@
+#Program, welches zwei Seiten eines Dreicks einliesßt 
+
+# 1. Programm, welches zwei Seiten eines Dreiecks einliest mittels input() und ausgibt, 
+# ob die erste Seite länger ist als die zweite
+
+#
+## Aufgaben mit `input()`
+
+#Lies die benötigten Werte mit `input()` ein. Wandle Eingaben, die Zahlen darstellen, mit `int()` in ganze Zahlen um. Gib anschließend eine verständliche Aussage und das Ergebnis des Vergleichs aus.
+
+#1. **Zwei Seiten**
+   #Lies die Längen zweier Dreiecksseiten ein. Gib aus, ob die erste Seite länger ist als die zweite.
+
+#2. **Zwei Temperaturen**
+   #Lies zwei Temperaturen in Grad Celsius ein. Gib aus, ob die Temperaturen gleich sind.
+
+#3. **Mindestalter**
+   #Lies das Alter einer Person ein. Prüfe, ob die Person mindestens 16 Jahre alt ist, und gib das Ergebnis verständlich aus.
+
+#4. **Punktestand prüfen**
+   #Lies die erreichten Punkte und die zum Bestehen benötigte Mindestpunktzahl von 20 ein. Gib aus, ob die erreichte Punktzahl kleiner als die Mindestpunktzahl ist.
+
+#5. **Gewichtsgrenze**
+   #Lies das Gewicht eines Pakets und das maximal erlaubte Gewicht ein. Gib aus, ob das Paket höchstens so schwer wie erlaubt ist. Verwende dafür den passenden Vergleichsoperator für „kleiner oder gleich“.#
+
+
+
+
+a = float(input("Gib die Seite a ein:"))
+b = float(input("Gib die Seite b ein:"))
+
+print (a)
+print (b)
+
+
+print ("Ist die erste Seita a, länger als die zweite Seite b?")
+
+
+ergebnis = a == b 
+
+
+print(ergebnis)
+
+
+#2
+
+temperatur1 = float(input("Gib eine Temperatur in Grad Celcius ein:"))
+temperatur2 = float(input("Gib eine zweite Temperatur in Grad Celcius ein:"))
+
+print("Eingegebene Temperatur 1 in Celcius:", temperatur1)
+print("Eingegebene Temperatur 2 in Celcius:", temperatur2)
+
+ergebnis = temperatur1 == temperatur2
+
+
+print("Die Temperaturen 1 und 2 sind gleich", ergebnis )
+
+# 3
+
+
+alter = float(input("Bitte gebe Dein Alter in Jahren ein:"))
+
+if alter >= 16: 
+
+        print("Prima, Du bist mindestens 16 Jahre alt")
+
+else: 
+
+        print ("Du bist leider noch nicht 16")
+
+
+#4 
+
+punktzahl = float(input("Wie viele Punkte hast Du erreicht?:"))
+
+mind = 20
+
+ergebnis = punktzahl >= mind
+
+
+print("Die angegebene Punktzahl reicht aus",ergebnis)
+
+
+# 5
+
+packetgewicht = float(input(" Bitte geben Sie Ihr Gewicht in kg ein:"))
+
+maxgewicht = 30
+
+print("Das maximale Gewicht ist", maxgewicht, "kg")
+
+if packetgewicht <= maxgewicht: 
+
+        print("Ihr Packet ist im Rahmen des gewünschten Gewichtes")
+
+else:
+        print("Ihr Packet überschreitet das maximale Gewicht")
